@@ -1,6 +1,9 @@
 package juegomemoria;
 
-//librerias
+/**
+ * Librerias
+ */
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -23,7 +26,7 @@ public class menuinicio extends JFrame implements ActionListener {
     }
 
     /**
-     * Metodo que tiene todos los botones del menu
+     * Método que tiene todos los botones del menu
      */
 
     public void componentes(){
@@ -73,40 +76,41 @@ public class menuinicio extends JFrame implements ActionListener {
 
     }
 
-    //eventos de acción
+    /**
+     *Eventos del menu
+     */
 
     @Override
     public void actionPerformed(ActionEvent e) {
 
-        //este evento realiza la acción del boton iniciar juego
+        /**
+         * evento del botón para inicial el juego
+         */
         if(e.getSource() == iniciarjuego){
 
-            //se coloca un if para colocar una excepcion a la hora de iniciar el juego
             if(txtnomjugador.getText().equals("")){
-                //si en el txtnomjugador no se encuentra ningun valor
+                /**
+                 * si no encuentra el nombre del jugador va a mandar un mensaje recordatorio
+                 */
                 JOptionPane.showMessageDialog(null, "Introduzca el nombre del jugador");
-                //mandara un mensaje diciendo que tiene que colocar algun nombre
             }else{
-                //de lo contrario, se inicializara el juego de memoria
-                //se manda a llamar la clase JuegoMemoria
                 JuegoMemoria ventana = new JuegoMemoria();
-                //decimos que nombreju de la clase JuegoMemoria
-                //va a obtener el valor que se coloco en el txtnomjugador
                 ventana.nombreju.setText(txtnomjugador.getText());
-                //esto se coloca para inicializar el tiempo de la clase JuegoMemoria
                 ventana.tiempo.start();
-                //mostramos la ventana de la clase JuegoMemoria
                 ventana.setVisible(true);
-                //ocultamos la ventana de menuinicial
                 this.setVisible(false);
 
 
             }
         }
 
-        //este es el evento del boton salir
+        /**
+         * evento para el botón de salir
+         */
         if(e.getSource() == salir){
-            //se mostrara una ventana donde hace una pregunta y tiene las opciones de salir o no
+            /**
+             * Se preguntará si se quiere salir del juego
+             */
             if (JOptionPane.showConfirmDialog(rootPane, "¿Quiere salir del juego?",
                     "Salir del juego", JOptionPane.YES_NO_OPTION, JOptionPane.ERROR_MESSAGE) == JOptionPane.YES_OPTION)
                 System.exit(0);
