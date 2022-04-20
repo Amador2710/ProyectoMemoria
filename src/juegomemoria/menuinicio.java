@@ -34,17 +34,17 @@ public class menuinicio extends JFrame implements ActionListener {
         panel.setLayout(null);
         this.getContentPane().add(panel);
 
-        etiqueta = new JLabel("Juego de Memoria ");
-        etiqueta.setBounds(380,60,300,60);
-        etiqueta.setFont(new Font("Berlin Sans FB", Font.PLAIN, 30));
+        etiqueta = new JLabel("JUEGO DE MEMORIA ");
+        etiqueta.setBounds(340,60,350,60);
+        etiqueta.setFont(new Font("Avengero", Font.PLAIN, 25));
         panel.add(etiqueta);
         /**
          *  Es donde se coloca el nombre de jugador
          */
 
-        etiqueta = new JLabel("Nombre de jugador");
+        etiqueta = new JLabel("Nombre del jugador");
         etiqueta.setBounds(400,250,250,40);
-        etiqueta.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 20));
+        etiqueta.setFont(new Font("Avengero", Font.PLAIN, 15));
         panel.add(etiqueta);
 
 
@@ -59,7 +59,7 @@ public class menuinicio extends JFrame implements ActionListener {
          */
         iniciarjuego = new JButton("Jugar");
         iniciarjuego.setBounds(370,400,250,40);
-        iniciarjuego.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 15));
+        iniciarjuego.setFont(new Font("Avengero", Font.PLAIN, 15));
         iniciarjuego.addActionListener(this);
         panel.add(iniciarjuego);
 
@@ -69,7 +69,7 @@ public class menuinicio extends JFrame implements ActionListener {
          */
         salir = new JButton("Salir");
         salir.setBounds(370,450,250,40);
-        salir.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 15));
+        salir.setFont(new Font("Avengero", Font.PLAIN, 15));
         salir.addActionListener(this);
         panel.add(salir);
 

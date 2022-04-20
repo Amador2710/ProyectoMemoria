@@ -309,7 +309,7 @@ public class JuegoMemoria extends JFrame implements ActionListener{
     private void componentes(){
         etiqueta = new JLabel("Jugador: ");
         etiqueta.setBounds(40,40,150,40);
-        etiqueta.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 15));
+        etiqueta.setFont(new Font("Avengero", Font.PLAIN, 10));
         panel.add(etiqueta);
 
         nombreju = new JLabel();
@@ -319,7 +319,7 @@ public class JuegoMemoria extends JFrame implements ActionListener{
 
         etiqueta = new JLabel("Tiempo: ");
         etiqueta.setBounds(40,80,150,40);
-        etiqueta.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 15));
+        etiqueta.setFont(new Font("Avengero", Font.PLAIN, 10));
         panel.add(etiqueta);
 
 
@@ -330,7 +330,7 @@ public class JuegoMemoria extends JFrame implements ActionListener{
 
         etiqueta = new JLabel("Hora inicio: ");
         etiqueta.setBounds(40,120,150,40);
-        etiqueta.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 15));
+        etiqueta.setFont(new Font("Avengero", Font.PLAIN, 10));
         panel.add(etiqueta);
 
 
@@ -341,7 +341,7 @@ public class JuegoMemoria extends JFrame implements ActionListener{
 
         etiqueta = new JLabel("Fecha: ");
         etiqueta.setBounds(40,160,150,40);
-        etiqueta.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 15));
+        etiqueta.setFont(new Font("Avengero", Font.PLAIN, 10));
         panel.add(etiqueta);
 
 
@@ -353,7 +353,7 @@ public class JuegoMemoria extends JFrame implements ActionListener{
 
         reiniciar = new JButton("Reiniciar partida");
         reiniciar.setBounds(80,560,200,40);
-        reiniciar.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 15));
+        reiniciar.setFont(new Font("Avengero", Font.PLAIN, 13));
         reiniciar.addActionListener(this);
         panel.add(reiniciar);
 
