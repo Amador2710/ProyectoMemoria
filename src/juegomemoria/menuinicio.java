@@ -68,7 +68,7 @@ public class menuinicio extends JFrame implements ActionListener {
          * Boton salir
          */
         salir = new JButton("Salir");
-        salir.setBounds(370,500,250,40);
+        salir.setBounds(370,450,250,40);
         salir.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 15));
         salir.addActionListener(this);
         panel.add(salir);

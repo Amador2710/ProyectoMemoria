@@ -23,7 +23,7 @@ public class Recordjugador extends JFrame implements ActionListener{
         panel.setLayout(null);
         this.getContentPane().add(panel);
 
-        etiqueta = new JLabel("Tu Record");
+        etiqueta = new JLabel("Record");
         etiqueta.setBounds(430,60,150,40);
         etiqueta.setFont(new Font("Times New Roman", Font.PLAIN, 35));
         panel.add(etiqueta);
