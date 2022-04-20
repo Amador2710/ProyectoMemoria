@@ -16,7 +16,9 @@ public class Recordjugador extends JFrame implements ActionListener{
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setResizable(false);
 
-        //agregamos panel
+        /**
+         * Se agrega el panel para mostrar el record
+         */
         JPanel panel = new JPanel();
         panel.setLayout(null);
         this.getContentPane().add(panel);
@@ -31,7 +33,9 @@ public class Recordjugador extends JFrame implements ActionListener{
         etiqueta.setFont(new Font("Times New Roman", Font.PLAIN, 20));
         panel.add(etiqueta);
 
-        //este label obtendra el nombre del jugador colocado anteriormente
+        /**
+         * Se usará el nombre del jugador que se usó en la partida
+         */
         lblnombrejuga = new JLabel("nombre");
         lblnombrejuga.setBounds(480,180,150,40);
         lblnombrejuga.setFont(new Font("Times New Roman", Font.PLAIN, 20));
@@ -42,8 +46,9 @@ public class Recordjugador extends JFrame implements ActionListener{
         etiqueta.setFont(new Font("Times New Roman", Font.PLAIN, 20));
         panel.add(etiqueta);
 
-        //este label obtendra el tiempo final que obtuvo, mejor dicho en cuanto tiempo
-        //se tardo el jugador en terminar el juego
+        /**
+         * Mostrará el tiempo que se tardó encontrando las parejas
+         */
         lbltiempoju = new JLabel("tiempo");
         lbltiempoju.setBounds(480,240,150,40);
         lbltiempoju.setFont(new Font("Times New Roman", Font.PLAIN, 20));
@@ -54,7 +59,9 @@ public class Recordjugador extends JFrame implements ActionListener{
         etiqueta.setFont(new Font("Times New Roman", Font.PLAIN, 20));
         panel.add(etiqueta);
 
-        //este label mostrar la hora de inicio
+        /**
+         * Se mostrará la hora de inicio de la partida
+         */
         lblhorainicio = new JLabel("hora");
         lblhorainicio.setBounds(480,300,150,40);
         lblhorainicio.setFont(new Font("Times New Roman", Font.PLAIN, 20));
@@ -65,7 +72,9 @@ public class Recordjugador extends JFrame implements ActionListener{
         etiqueta.setFont(new Font("Times New Roman", Font.PLAIN, 20));
         panel.add(etiqueta);
 
-        //en este label se mostrara la fecha
+        /**
+         * Se mostrará la fecha en la que se jugó
+         */
         lblfechaju = new JLabel("fecha");
         lblfechaju.setBounds(480,360,150,40);
         lblfechaju.setFont(new Font("Times New Roman", Font.PLAIN, 20));
@@ -81,7 +90,9 @@ public class Recordjugador extends JFrame implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
 
-        //el boton regresar hara que regresemos a la ventana de menu
+        /**
+         * Sirve para mostrar el botón para regresar al menú
+         */
         if(e.getSource() == regresar){
             menuinicio ventana = new menuinicio();
             JuegoMemoria ventana2 = new JuegoMemoria();
